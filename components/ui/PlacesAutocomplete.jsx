@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { MapPin, Loader2 } from "lucide-react";
 
+console.log("Maps Key:", process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY);
 // Load script once at module level
 function loadGoogleMapsScript() {
   if (typeof window === "undefined") return;
